@@ -16,6 +16,7 @@ export function installFocusModeShortcut() {
     }
 
     execSync(`open ${PATH_TO_FOCUS_MODE_SHORTCUT}`);
+    execSync('osascript enter.scpt', { encoding: 'utf-8' }); //runs applescript enter.scpt
 }
 
 function runFocusModeShortcut(args) {
